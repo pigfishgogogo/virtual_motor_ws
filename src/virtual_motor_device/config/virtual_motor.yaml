@@ -1,0 +1,26 @@
+# config/virtual_motor.yaml
+/**:
+  ros__parameters:
+    can_interface: "vcan0"
+    node_id: 1
+    enable_ros_control: true
+    
+    # 电机参数
+    motor:
+      max_speed: 3000.0
+      max_torque: 10.0
+      max_current: 20.0
+      encoder_resolution: 10000
+      rated_voltage: 48.0
+      friction_coefficient: 0.01
+      
+    # 控制参数
+    control:
+      position_kp: 10.0
+      velocity_kp: 1.0
+      torque_kp: 0.5
+      
+    # 仿真参数
+    simulation:
+      update_rate: 100.0  # Hz
+      publish_rate: 50.0  # Hz

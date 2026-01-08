@@ -1,0 +1,15 @@
+# config/master_config.yaml
+/**:
+  ros__parameters:
+    master_bin: "master.bin"
+    can_interface: "vcan0"
+    node_id: 127
+    sync_interval: 10000
+    timeout: 1000
+    
+    # 从站配置
+    slaves:
+      - node_id: 1
+        driver: "canopen_base_driver::LelyDriver"
+        package: "virtual_motor_device"
+        plugin: "VirtualMotorDevice"

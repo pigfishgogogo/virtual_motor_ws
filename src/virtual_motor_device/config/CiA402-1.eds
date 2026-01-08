@@ -1,0 +1,31 @@
+<!-- config/CiA402-1.eds (简化版) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<ISO15745ProfileContainer>
+  <ProfileBody>
+    <DeviceIdentity></DeviceIdentity>
+    <DeviceFunction>
+      <ApplicationProcess>
+        <Parameters>
+          <!-- 通信参数区 -->
+          <Parameter uniqueID="1000" access="ro">
+            <Label>Device type</Label>
+            <DataType>UNSIGNED32</DataType>
+          </Parameter>
+          
+          <!-- DS402参数区 -->
+          <Parameter uniqueID="6040" access="rw">
+            <Label>Control word</Label>
+            <DataType>UNSIGNED16</DataType>
+          </Parameter>
+          
+          <Parameter uniqueID="6041" access="ro">
+            <Label>Status word</Label>
+            <DataType>UNSIGNED16</DataType>
+          </Parameter>
+          
+          <!-- 更多参数定义... -->
+        </Parameters>
+      </ApplicationProcess>
+    </DeviceFunction>
+  </ProfileBody>
+</ISO15745ProfileContainer>
