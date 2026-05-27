@@ -1,0 +1,6 @@
+/virtual_motor_device:
+  ros__parameters:
+    node_ids: [1, 2, 3, 4]  # 整数数组
+    can_interface: "vcan0"
+    max_speed: 3000.0
+    max_torque: 10.0

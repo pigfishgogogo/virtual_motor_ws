@@ -20,6 +20,9 @@ find_package(canopen_base_driver QUIET)
 find_package(canopen_core QUIET)
 
 # 创建库
+# add_library(${PROJECT_NAME}
+#   src/single_virtual_motor_device.cpp
+# )
 add_library(${PROJECT_NAME}
   src/virtual_motor_device.cpp
 )
